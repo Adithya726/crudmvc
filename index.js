@@ -7,10 +7,7 @@ const cors = require('cors');
 const studentRoutes = require('./routes/studentRoutes');
 
 const app = express();
-const corsOptions = {
-  origin: '*',
-  optionsSuccessStatus: 200,
-};
+cors();
 app.use(cors(corsOptions));
 app.use(express.json());
 
