@@ -8,7 +8,7 @@ const studentRoutes = require('./routes/studentRoutes');
 
 const app = express();
 const corsOptions = {
-  origin: 'http://localhost:5000/api/students',
+  origin: '*',
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
